@@ -1,0 +1,80 @@
+body {
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    background-color: blanchedalmond;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: monospace;
+}
+h1 {
+    color: cadetblue;
+    width: 220px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    
+    margin-bottom: 0;
+    text-align: center;
+    background-color: burlywood;
+    border-top-left-radius: 5% 20%;
+    border-top-right-radius: 5% 20%;
+}
+span{
+    height: 1.5em;
+    width: 220px;
+    text-align: center;
+    background-color: burlywood;
+}
+#gameBoard {
+    background-color: burlywood;
+    min-height: 220px;
+    width: 220px;
+    
+    display: grid;
+    grid-template-columns: repeat(3, 60px);
+    grid-template-rows: repeat(3, 60px);
+    justify-content: center;
+    align-content: center;
+    grid-gap: 10px;
+    border-radius: 0 0 3% 3%;
+}
+.gameBoardSquare {
+    font-size: 3rem;
+    color: rgba(0, 0, 0, 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: cadetblue;
+    opacity: .8;
+    height: 60px;
+    width: 60px;
+    transition: opacity .2s;
+    
+}
+.gameBoardSquare:hover{
+    opacity: .55;
+}
+.gameBoardSquare:active{
+    transform: scale(.95);
+}
+
+#gameBoardGrid {
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    justify-self: center;
+    align-self: center;
+    height: 200px;
+    width: 200px;
+    background-color: rgba(0, 0, 0, .5);
+}
+
+button {
+    border-color: transparent;
+    border-radius: 5%;
+    color: black;
+    background-color: cadetblue;
+    opacity: .8
+}
